@@ -1,0 +1,34 @@
+# CLI
+!:n ............ nth argument to last command
+!$  ............ last argument to last command
+!pattern ....... last command matching pattern
+mv a !#:1.bak .. move a to a backup
+
+
+# Scripting
+
+## String Conditions
+
+[[ -z STRING ]] .........  Empty string
+[[ -n STRING ]] .........  Not empty string
+[[ STRING == STRING ]] ..  Equal
+[[ STRING != STRING ]] ..  Not Equal
+[[ NUM -eq NUM ]] .......  Equal
+[[ NUM -ne NUM ]] .......  Not equal
+[[ NUM -lt NUM ]] .......  Less than
+[[ NUM -le NUM ]] .......  Less than or equal
+[[ NUM -gt NUM ]] .......  Greater than
+[[ NUM -ge NUM ]] .......  Greater than or equal
+[[ STRING =~ STRING ]] ..  Regexp
+
+## File Conditions
+[[ -e FILE ]] ...........  Exists
+[[ -d FILE ]] ...........  Directory
+
+
+## Redirection
+python hello.py > output.txt   # stdout to (file)
+python hello.py >> output.txt  # stdout to (file), append
+python hello.py 2> error.log   # stderr to (file)
+python hello.py 2>/dev/null    # stderr to (null)
+python hello.py &>/dev/null    # stdout and stderr to (null)

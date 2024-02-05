@@ -1,0 +1,20 @@
+gf  "goto"  edit file whose name is under cursor
+:r <file>  "read"  insert file contents under cursor
+:s/<pat>/<rep>/<opts>  "substitute"  opts{c=confirm,g=global,i=ignore case} :%s=whole file
+"xyy  "yank"  yank line to register x (then "xp)
+z.  "scroll"  Center the current line
+mh  "mark here"  set mark, return with 'h
+:g/<pat>/d  "global delete"  Delete all lines matching pattern
+:g/<find>/s/<pat>/<rep>/g  "global cond find replace"  substitute pat>rep if line has find
+:s_\s\+_|_g globally replace any whitespace with "|"
+#surround.vim
+cs"' change surrounding " to '
+ds" delete surrounding "
+ysiw{ surround word with { (} for space pad)
+#my latex shortcuts
+;it italics(if in insert mode) or itemize (if in normal mode)
+;en enumerate (normal mode)
+;b bold
+;i italics
+
+
