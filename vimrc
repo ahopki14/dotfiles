@@ -5,6 +5,7 @@ set autoindent                " start new line at the same indentation level
 set showmatch                 " Show matching bracets when text indicator is over them
 set nobackup                  " do not keep backup files, it's 70's style cluttering
 set noswapfile                " do not write annoying intermediate swap files,
+set encoding=utf-8
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -32,6 +33,20 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Airline
+let g:airline_theme="murmur"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#tabs_label = ''
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline_section_y=''
+let g:airline_skip_empty_sections = 1
+let g:airline_section_z = '%2l/%L☰%2v'
+nnoremap gb :tabprevious<CR>
+nnoremap <C-t> :tabnew<CR>
 
 nnoremap <leader>? :NERDTreeToggle<CR>
 
