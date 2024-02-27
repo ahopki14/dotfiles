@@ -13,7 +13,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'tpope/vim-fugitive' 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lervag/vimtex'
@@ -35,6 +35,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Airline
+let g:airline#extensions#branch#enabled=1
+let g:airline#extensions#hunks#enabled=0
 let g:airline_theme="murmur"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
