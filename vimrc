@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set hlsearch                  " highlight search terms
+hi Search ctermbg=LightYellow
+hi Search ctermfg=Red
 set autoindent                " start new line at the same indentation level
 set showmatch                 " Show matching bracets when text indicator is over them
 set nobackup                  " do not keep backup files, it's 70's style cluttering
