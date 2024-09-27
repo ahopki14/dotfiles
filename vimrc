@@ -8,6 +8,12 @@ set showmatch                 " Show matching bracets when text indicator is ove
 set nobackup                  " do not keep backup files, it's 70's style cluttering
 set noswapfile                " do not write annoying intermediate swap files,
 set encoding=utf-8
+set number
+set relativenumber
+let g:markdown_folding=1
+
+"spaces not tabs
+set expandtab
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -50,11 +56,14 @@ let g:airline#extensions#tabline#show_close_button = 0
 let g:airline_section_y=''
 let g:airline_skip_empty_sections = 1
 let g:airline_section_z = '%2l/%L☰%2v'
+let g:airline_powerline_fonts=0
 nnoremap gb :tabprevious<CR>
 nnoremap <C-t> :tabnew<CR>
 
 nnoremap <leader>? :NERDTreeToggle<CR>
 
+" vimtex
+let g:vimtex_view_method='zathura'
 
 " for tmux buffer
 nnoremap <leader>r :call writefile(getreg("0",1,1),'/tmp/vimreg')<CR>
