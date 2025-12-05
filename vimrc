@@ -69,3 +69,5 @@ let g:vimtex_view_method='zathura'
 " for tmux buffer
 nnoremap <leader>r :call writefile(getreg("0",1,1),'/tmp/vimreg')<CR>
 
+hi clear SpellBad
+hi SpellBad cterm=underline

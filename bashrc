@@ -133,3 +133,8 @@ if [ -f '/opt/google-cloud-sdk/path.bash.inc' ]; then . '/opt/google-cloud-sdk/p
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/opt/google-cloud-sdk/completion.bash.inc' ]; then . '/opt/google-cloud-sdk/completion.bash.inc'; fi
+
+#GPG
+GPG_TTY=$(tty)
+export GPG_TTY
+export XAUTHORITY=$HOME/.Xauthority
