@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export STICKY_NOTES=/home/ahopkins/Documents/dotfiles/sticky_notes
+export STICKY_NOTES=/home/ahopkins/dotfiles/sticky_notes
 source $STICKY_NOTES/retrieve.sh
 
 alias t='/usr/local/bin/todo.txt_cli-2.12.0/todo.sh'
