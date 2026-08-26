@@ -137,4 +137,13 @@ if [ -f '/opt/google-cloud-sdk/completion.bash.inc' ]; then . '/opt/google-cloud
 #GPG
 GPG_TTY=$(tty)
 export GPG_TTY
-export XAUTHORITY=$HOME/.Xauthority
+#export XAUTHORITY=$HOME/.Xauthority
+
+export NO_AT_BRIDGE=1
+
+
+case "$PWD" in
+  /mnt/md0/dbio*)
+    export PWD="/dbio${PWD#/mnt/md0/dbio}"
+    ;;
+esac

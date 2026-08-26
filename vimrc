@@ -28,6 +28,9 @@ Plugin 'lervag/vimtex'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-scripts/VimCompletesMe'
 Plugin 'jamessan/vim-gnupg'
+"Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc-syntax'
+"Plugin 'vim-pandoc/vim-rmarkdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -69,5 +72,6 @@ let g:vimtex_view_method='zathura'
 " for tmux buffer
 nnoremap <leader>r :call writefile(getreg("0",1,1),'/tmp/vimreg')<CR>
 
+colorscheme slate
 hi clear SpellBad
 hi SpellBad cterm=underline
