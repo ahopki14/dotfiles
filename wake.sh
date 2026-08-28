@@ -17,4 +17,4 @@ case "$1" in
     ;;
 esac
 
-echo "wakeonlan -i 192.168.50.255 $mac"
+wakeonlan -i 192.168.50.255 $mac
