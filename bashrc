@@ -147,3 +147,5 @@ case "$PWD" in
     export PWD="/dbio${PWD#/mnt/md0/dbio}"
     ;;
 esac
+
+export OLLAMA_MODELS=/mnt/md0/llms/
