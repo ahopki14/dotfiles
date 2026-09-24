@@ -6,7 +6,7 @@
 
 # Thermals (°C)
 TEMP_LOW=50     # Below this: minimum fan speed
-TEMP_HIGH=70    # Above this: restore automatic iDRAC control
+TEMP_HIGH=75    # Above this: restore automatic iDRAC control
 
 # Fan Speeds (%)
 SPEED_LOW_HEX="0x0a"   # 10% speed
