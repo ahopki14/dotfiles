@@ -1,0 +1,74 @@
+Pluripotent Hematopoietic Stem Cell
+├── [Myeloid pathway]
+│   └── CFU-GEMM
+│       └── Myeloid Stem Cell
+│           ├── BFU-E
+│           │   └── CFU-E
+│           │       └── Proerythroblast
+│           │           └── Erythrocytes
+│           ├── BFU-Meg [or BFU-Mk]
+│           │   └── CFU-Meg [or CFU-Mk]
+│           │       └── Megakaryoblast
+│           │           └── Megakaryocyte
+│           │               └── Platelets [or Thrombocytes]
+│           ├── CFU-GM [or CFU-C]
+│           │   └── CFU-G
+│           │       └── Myeloblast
+│           │           └── Neutrophilic Myelocyte
+│           │               └── Promonocyte
+│           │                   └── Monocyte
+│           │                       ├── Polymorphonucleated Neutrophil
+│           │                       └── Macrophage
+│           ├── CFU-M
+│           │   └── Myeloblast
+│           │       └── Monoblast
+│           │           └── Promonocyte
+│           │               └── Monocyte
+│           │                   ├── Polymorphonucleated Neutrophil
+│           │                   ├── Macrophage
+│           │                   └── Dendritic Cell
+│           ├── CFU-Eo
+│           │   └── Myeloblast
+│           │       └── Eosinophilic Myelocyte
+│           │           └── Eosinophil
+│           ├── CFU-Bas
+│           │   └── Myeloblast
+│           │       └── Basophilic Myelocyte
+│           │           └── Basophil
+│           └── CFU-Mast [or CFU-Mc]
+│               └── Mast Cell
+│
+└── [Lymphoid pathway]
+    ├── Natural Killer Precursor
+    │   └── Natural Killer Cell
+    │
+    └── Lymphoid Stem Cell [CD4⁻CD8⁻TCR⁻]
+        ├── B-Cell Progenitor
+        │   └── T-Cell [TCRγ/δ⁺]
+        │       └── Pro B-Cell [Germ-line VDJ]
+        │           └── Mature B-Cell
+        │               ├── IgM Antibody Secreting B-Cell
+        │               │   └── Switched Plasma Cell Secreting non-IgM
+        │               │       ├── IgE
+        │               │       ├── IgA
+        │               │       ├── IgG
+        │               │       ├── IgD
+        │               │       └── IgM
+        │               └── Memory B-Cell
+        │                   [Activated upon Antigen Stimulation]
+        │
+        └── T-Cell Progenitor [CD4⁻CD8⁻TCR⁻]
+            └── T-Cell [CD4⁺CD8⁺TCRα/β⁺]
+                ├── CD4⁺  [TCRα/β⁺]
+                │   └── Th-Cell [T-Helper Cell]
+                │       └── T-Helper Differentiation
+                │           └── T-Helper Cell Sub-sets
+                │               ├── Th3 [Adaptive Treg Cell]
+                │               ├── Th1
+                │               ├── Treg [CD4⁺CD25⁺FOXP3]
+                │               ├── Th2
+                │               ├── Th17
+                │               └── Thi
+                └── CD8⁺  [TCRα/β⁺]
+                    └── Tc-Cell [Cytotoxic T-Cell]
+                        └── T-Memory Cell
